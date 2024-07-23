@@ -1,0 +1,93 @@
+<!-- Yi-Rou Hung, u22561154 -->
+<!DOCTYPE html>
+<html>
+    
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <title>CompareCar</title>
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: rgb(246, 231, 231);
+}
+.navbar {
+  overflow: hidden;
+  top: 0;
+}
+.column {
+  float:left;
+  width: 50%;
+}
+</style>
+</head>
+
+<body>
+<div class="navbar ">
+  <img class="logo" src="img/logo.png" alt="logo" >
+  <div class="topnav-right">
+    <a href="index.html">Cars</a>
+    <a href="Brands.html">Brand</a>
+    <a href="FindCar.html">Find a Car</a>
+    <a href="#CompareCar" class="active">Compare</a>
+  </div>
+</div>
+
+<!-- Compare the cars with SearchBar -->
+<h1>CARS COMPARISON</h1>
+
+<p><b>Enter the two cars you would like to compare:</b></p>
+<form class="example" action="/action_page.php" style="margin:left;max-width:200px">
+<input type="text" placeholder="Car 1.." name="search">
+  <button type="submit"><i class="fa fa-search"></i></button>
+
+<p><b>Compares with..</b></p>
+<form class="example" action="/action_page.php" style="margin:left;max-width:200px">
+  <input type="text" placeholder="Car 2.." name="search2">
+  <button type="submit"><i class="fa fa-search"></i></button>
+</form>
+</form><br><br>
+
+<!-- The two results -->
+<fieldset>
+  <legend><strong>Comaprison result:</strong></legend><br>
+  <div class="row">
+    <div class="column">
+      <div class="content">
+        <img src="img/Nissan 350z Boasting Rocket Bunny.jpeg" alt="Error" style="width:100%">
+        <h3>Comaprison 1 Specifications:</h3>
+        <p>About :  Brand - Nissan</p>
+        <p>         Price - R 249,900.00</p>
+        <p>         Model - 2008 Nissan 350z Rocket Bunny HR</p>
+        <p>         Status - In Production</p>
+        <p>Engine : Transmission Type - Automatic</p>
+        <p>         Power Maximum Total - N/A</p>
+        <p>         Power Max RPM - 7000 rpm max</p>
+        <p>         Engine - 2.5L VQ35DE engine</p>
+        <p>         Engine Capacity - 3498 cc</p>
+        <p>         Fuel Tank Capacity - 75L</p>
+        <p>Performance : Top Speed - 250 km/h (155mph)</p>
+      </div>
+    </div>
+      <div class="column">
+        <div class="content">
+          <img src="img/Subaru STI | Impreza WRX STI.jpeg" alt="Error" style="width:100%">
+        <h3>Comaprison 2 Specifications:</h3>
+        <p>About : Brand - Subaru</p>
+        <p>        Price - R580,000.00</p>
+        <p>        Model - Subaru WRX STI</p>
+        <p>        Status - In Production</p>
+        <p>Engine : Transmission Type - Manual</p>
+        <p>         Power Maximum Total - 6000kW/rpm</p>
+        <p>         Power Max RPM - 4000 rpm</p>
+        <p>         Engine - 2.5L turbocharged I4 engine</p>
+        <p>         Engine Capacity - 2457 cc</p>
+        <p>         Fuel Tank Capacity - 60L</p>
+        <p>Performance : Top Speed - 255 km/h</p>
+        </div>
+      </div>
+</fieldset>
+
+</body>
+</html>

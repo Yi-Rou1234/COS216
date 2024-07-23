@@ -1,0 +1,141 @@
+<!-- Yi-Rou Hung, u22561154 -->
+<!DOCTYPE html>
+<html>
+    
+<head>
+  <link rel="stylesheet" href="css/style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>FindCar</title>
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: rgb(246, 231, 231);
+}
+.navbar {
+  overflow: hidden;
+  /* background-color: #ee8fb0; */
+  top: 0;
+}
+</style>
+</head>
+
+<body>
+<div class="navbar ">
+  <img class="logo" src="img/logo.png" alt="logo" >
+  <div class="topnav-right">
+    <a href="index.html">Cars</a>
+    <a href="Brands.html" >Brand</a>
+    <a href="#FindCar" class="active">Find a Car</a>
+    <a href="Compare.html">Compare</a>
+  </div>
+</div>
+
+<!-- HTML FORM WITH FIELDSET -->
+<form>
+  <fieldset>
+    <legend><strong>Advanced Filter:</strong></legend>
+    <!-- Fuel Type List -->
+    <br><label for="fuel">Fuel Type: *</label><br><br>
+    <select name="fuel" id="fuel" required>
+      <option value="">None</option>
+      <option value="Petrol">Petrol</option>
+      <option value="Diesel">Diesel</option>
+    </select>
+    <br><br>
+
+    <!-- Transmission -->
+    <br><label for="Transmission">Transmission Type: *</label><br><br>
+    <select name="Transmission" id="Transmission" required>
+      <option value="">None</option>
+      <option value="5Manual">5-speed Manual</option>
+      <option value="4Manual">4-speed Manual</option>
+      <option value="4Auto">4-speed Auto</option>
+    </select>
+    <br><br>
+
+    <!-- Car Type -->
+    <p>Select car type: *</p>
+    <input type="radio" id="sportcar" name="PreferCarType" value="SPORTCAR" required="required">
+    <label for="sportcar">Sports Car (S)</label><br>
+    <input type="radio" id="compactcar" name="PreferCarType" value="COMPACTCAR">
+    <label for="compactcar">Compact Executive Car</label><br><br>
+
+    <!-- Price Range -->
+    <p>Select the Price Range(s): *</p>
+    <input type="radio" id="price1" name="price1" value="LowPrice" required="required">
+    <label for="price1"> R100 000~R300 000</label><br>
+    <input type="radio" id="price2" name="price2" value="MediumPrice" >
+    <label for="price2"> R300 000~R500 000</label><br>
+    <input type="radio" id="price3" name="price3" value="HighPrice" >
+    <label for="price3"> R500 000~R1 000 000</label><br>
+    <input type="radio" id="price4" name="price4" value="HighestPrice" >
+    <label for="price4"> R1 000 000+</label><br><br>
+
+    <!-- Year of Car -->
+    <p>Select the Vehicle Age:</p>
+    <input type="checkbox" id="age1" name="age1" value="Young">
+    <label for="age1"> 1~5 yrs</label><br>
+    <input type="checkbox" id="age2" name="age2" value="Adult">
+    <label for="age2"> 6~10 yrs</label><br>
+    <input type="checkbox" id="age3" name="age3" value="Old">
+    <label for="age3"> 10+ yrs</label><br><br>
+
+    <!-- Airbags -->
+    <label for="fAirbag">Would you prefer airbag(s):</label><br>
+    <input type="text" id="fAirbag" name="fname" value="Yes/No"><br><br><br>
+
+    <input type="submit" value="Submit">
+  </fieldset>
+</form>
+
+<!-- Alert message -->
+<div class="alert info">
+  <span class="closebtn">&times;</span>  
+  <strong>Info!</strong> Minimum of 5 and maximum of 8 results will be shown.
+</div> 
+
+
+<!-- Portfolio Gallery Grid -->
+<fieldset>
+<legend><strong>Result(s):</strong></legend>
+<div class="row">
+  <div class="column">
+    <div class="content">
+      <img src="img/missing.png" alt="Error" style="width:100%">
+      <h3></h3>
+      <p>Result 1</p>
+    </div>
+  </div>
+  <div class="column">
+    <div class="content">
+      <img src="img/missing.png" alt="Error" style="width:100%">
+      <h3></h3>
+      <p>Result 2</p>
+    </div>
+  </div>
+  <div class="column">
+    <div class="content">
+      <img src="img/missing.png" alt="Error" style="width:100%">
+      <h3></h3>
+      <p>Result 3</p>
+    </div>
+  </div>
+  <div class="column">
+    <div class="content">
+      <img src="img/missing.png" alt="Error" style="width:100%">
+      <h3></h3>
+      <p>Result 4</p>
+    </div>
+  </div>
+  <div class="column">
+    <div class="content">
+      <img src="img/missing.png" alt="Error" style="width:100%">
+      <h3></h3>
+      <p>Result 5</p>
+    </div>
+  </div>
+<!-- END GRID -->
+</div>
+</fieldset>
+</body>
+</html>

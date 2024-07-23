@@ -1,0 +1,284 @@
+<!-- Yi-Rou Hung, u22561154 -->
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="css/style.css">
+  <title>CarsIndex</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+  <style>
+  body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: rgb(246, 231, 231);
+}
+.navbar {
+  overflow: hidden;
+  /* background-color: #ee8fb0; */
+  top: 0;
+}
+
+div {
+  font-family: myFirstFont;
+}
+</style>
+<div class="navbar ">
+    <a href="#Index" class="active">Cars</a>
+    <a href="Brands.html">Brand</a>
+    <a href="FindCar.html">Find a Car</a>
+    <a href="Compare.html">Compare</a>
+    <div class="dropdown">
+      <button class="dropbtn">Filter 
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content">
+        <b href="#">Auto</b>
+        <b href="#">Manual</b>
+        <b href="#">New Cars</b>
+        <b href="#">Used Cars</b>
+        <b href="#">Petrol</b>
+        <b href="#">Diesel</b>
+      </div>
+      </div>
+      <div class="dropdown">
+      <button class="dropbtn">Sort 
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content">
+        <b href="#">Name</b>
+        <b href="#">Year</b>
+        <b href="#">Price</b>
+      </div>
+    </div> 
+
+    <div class="search-container">
+      <form action="/action_page.php">
+        <input type="text" placeholder="Search.." name="search">
+        <button type="submit"><i class="fa fa-search"></i></button>
+      </form>
+    </div>
+  </div>
+
+<!-- THE CARS GALLERY -->
+  <div class="main"></div>
+
+  <h1>JDM Auto</h1>
+  <hr>
+  <h2>Wide range of JDM car models for sale</h2>
+
+  <div class="row">
+  <div class="column">
+    <div class="content">
+      <div class="container">
+      <img src="img/Mazda Rx-7s.jpeg" alt="Mazda" style="width:100%">
+      <div class="overlay">
+        <div class="text">Mazda</div>
+      </div>
+      </div>
+      <h3>Mazda RX-7s</h3>
+      <p>1978-2022</p>
+      <p>Sports car (S)</p>
+      <p>5-speed manual</p>
+      <p>Turbocharged 13B REW engine</p>
+    </div>
+  </div>
+  <div class="column">
+    <div class="content">
+      <div class="container">
+      <img src="img/Nissan 180SX.jpg" alt="Nissan" style="width:100%">
+      <div class="overlay">
+        <div class="text">Nissan</div>
+      </div>
+      </div>
+      <h3>Nissan 180SX</h3>
+      <p>1989-1998</p>
+      <p>Sports car (S)</p>
+      <p>5-speed manual</p>
+      <p>Turbocharged SR20DET engine</p>
+    </div>
+  </div>
+  <div class="column">
+    <div class="content">
+      <div class="container">
+      <img src="img/Nissan 350z Boasting Rocket Bunny.jpeg" alt="Nissan" style="width:100%">
+      <div class="overlay">
+        <div class="text">Nissan</div>
+      </div>
+      </div>
+      <h3>Nissan 350z</h3>
+      <p>2018</p>
+      <p>Sports car (S)</p>
+      <p>5-speed automatic</p>
+      <p>3.5L VQ35DE engine</p>
+    </div>
+  </div>
+  <div class="column">
+    <div class="content">
+      <div class="container">
+      <img src="img/Nissan S23-Super Hiro.jpeg" alt="Nissan" style="width:100%">
+      <div class="overlay">
+        <div class="text">Nissan</div>
+      </div>
+      </div>
+      <h3>Nissan S23-Super Hiro</h3>
+      <p>1994-2014</p>
+      <p>Sports car (S)</p>
+      <p>4-speed manual</p>
+      <p>1.6L RI4 OHV engine</p>
+    </div>
+  </div>
+  <div class="column">
+    <div class="content">
+      <div class="container">
+      <img src="img/Skyline 25GT.jpeg" alt="Nissan" style="width:100%">
+      <div class="overlay">
+        <div class="text">Nissan</div>
+      </div>
+      </div>
+      <h3>Skyline 25GT</h3>
+      <p>1957-2023</p>
+      <p>Compact executive car</p>
+      <p>4-speed manual</p>
+      <p>straight-six engine</p>
+    </div>
+  </div>
+  <div class="column">
+    <div class="content">
+      <div class="container">
+      <img src="img/Subaru STI | Impreza WRX STI.jpeg" alt="Subaru" style="width:100%">
+      <div class="overlay">
+        <div class="text">Subaru</div>
+      </div>
+      </div>
+      <h3>Subaru Impreza WRX STI</h3>
+      <p>2014-2023</p>
+      <p>Sport car (S)</p>
+      <p>5-speed manual</p>
+      <p>2.5L turbocharged I4 engine</p>
+    </div>
+  </div>
+  <div class="column">
+    <div class="content">
+      <div class="container">
+      <img src="img/Toyota GR Supra.jpg" alt="Toyota" style="width:100%">
+      <div class="overlay">
+        <div class="text">Toyota</div>
+      </div>
+      </div>
+      <h3>Toyota GR Supra</h3>
+      <p>2019-2023</p>
+      <p>Sport cars (S)</p>
+      <p>4-speed automatic</p>
+      <p>BMW B58B30O1 turbocharged I6</p>
+    </div>
+  </div>
+  <div class="column">
+    <div class="content">
+      <div class="container">
+      <img src="img/Toyota Supra.jpg" alt="Toyota" style="width:100%">
+      <div class="overlay">
+        <div class="text">Toyota</div>
+      </div>
+      </div>
+      <h3>Toyota Supra</h3>
+      <p>2019-2023</p>
+      <p>Sports car (S)</p>
+      <p>4-speed automatic</p>
+      <p>BMW B58B30O1 turbocharged I4</p>
+    </div>
+  </div>
+  <div class="column">
+    <div class="content">
+      <div class="container">
+      <img src="img/Widebody Lexus_RC_F_.jpeg" alt="Lexus" style="width:100%">
+      <div class="overlay">
+        <div class="text">Lexus</div>
+      </div>
+      </div>
+      <h3>Widebody Lexus RCF</h3>
+      <p>2015-2023</p>
+      <p>Sports car (S)</p>
+      <p>5-speed manual</p>
+      <p>GReddy Supreme SP dual engine</p>
+    </div>
+  </div>
+  <div class="column">
+    <div class="content">
+      <div class="container">
+      <img src="img/Mazda RX-3.jpeg" alt="Mazda" style="width:100%">
+      <div class="overlay">
+        <div class="text">Mazda</div>
+      </div>
+      </div>
+      <h3>Mazda RX-3</h3>
+      <p>1971-1978</p>
+      <p>Sports car (S)</p>
+      <p>4-speed manual</p>
+      <p>rotary engine</p>
+    </div>
+  </div>
+  <div class="column">
+    <div class="content">
+      <div class="container">
+      <img src="img/mazda-car-rx-7.jpeg" alt="Mazda" style="width:100%">
+      <div class="overlay">
+        <div class="text">Mazda</div>
+      </div>
+      </div>
+      <h3>Mazda RX-7</h3>
+      <p>1978-2022</p>
+      <p>Sports car (S)</p>
+      <p>5-speed manual</p>
+      <p>turbocharged 13B REW engine</p>
+    </div>
+  </div>
+  <div class="column">
+    <div class="content">
+      <div class="container">
+      <img src="img/Nissan Skyline tuning.jpeg" alt="Nissan" style="width:100%">
+      <div class="overlay">
+        <div class="text">Nissan</div>
+      </div>
+      </div>
+      <h3>Nissan Skyline GT-R R34</h3>
+      <p>2003</p>
+      <p>Sports car (S)</p>
+      <p>5-speed manual</p>
+      <p>Nissan RB26DETT engine</p>
+    </div>
+  </div>
+  <div class="column">
+    <div class="content">
+      <div class="container">
+      <img src="img/toyota-ae86.jpeg" alt="Toyota" style="width:100%">
+      <div class="overlay">
+        <div class="text">Toyota</div>
+      </div>
+      </div>
+      <h3>Toyota ae86</h3>
+      <p>1994-1998</p>
+      <p>Sports car (S)</p>
+      <p>5-speed manual</p>
+      <p>turbocharged Toyota 2JZ-GTE</p>
+    </div>
+  </div>
+<!-- END GRID -->
+</div>
+
+<div class="content">
+  <h3>Additional Information</h3>
+  <p>Get in touch with us at UP's car seller!</p>
+  <p>Instagram page : @JDM Auto</p>
+  <p>Contact us : +27 (82) 293 3859</p>
+  <p>Email us : JDMAutoCenturion@up.ac.za</p>
+  <p>#JDM #SportCar #Drift #Car4Speed</p>
+  <p>-------------------------------------------------------------------------------------------------------------------------------------------------------------------</p>
+  <p>Copyright @ 2023 JDM Auto | All rights reservec.</p>
+</div>
+<!-- END MAIN -->
+
+
+</body>
+</html>

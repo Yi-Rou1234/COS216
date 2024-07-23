@@ -1,0 +1,437 @@
+/*xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx*/
+/*xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx*/
+/*INDEX PAGE*/
+/*xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx*/
+/*xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx*/
+#Sort {
+  display: flex; 
+  flex-wrap: wrap; 
+  justify-content: space-between;
+  padding: 20px; 
+  align-items: center;
+  background-color:#cdacacec;
+}
+
+.heading{
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-size: 200%;
+  text-align: center;
+}
+
+/*Style inside navbar A*/
+.navbar a {
+  /* float:left; */
+  font-size: 16px;
+  color: white;
+  background-color: #ec6588;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+  
+.navbar a:hover {
+  background-color: #d05c7b;
+  color: black;
+}
+  
+.navbar a.active {
+  background-color: #af3f5d;
+  color: white;
+}
+
+/*xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx*/
+/*CARS PAGE*/
+/*xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx*/
+
+.car-section-new {
+  width: 100%; 
+  margin-bottom: 20px;
+  background-color: rgba(211, 193, 193, 0.69);
+  border: 1px solid #ccc;
+  padding: 20px;
+  box-sizing: border-box;
+  display: block;
+  text-align: center;
+}
+
+/*Links inside the Navbar*/
+.navbar b {
+  float: left;
+  font-size: 16px;
+  color: rgba(118, 88, 88, 0.69);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  background-color: whitesmoke;
+}
+
+.navbar b.active {
+  background-color: #b54a67;
+  color: white;
+}
+
+/* Dropdown container */
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 16px;  
+  outline: none;
+  color: rgb(255, 255, 255);
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+  background-color: #ec6588;
+}
+
+.navbar b:hover, .dropdown:hover .dropbtn {
+  background-color: #d05c7b;
+  color: black;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #ffffffe1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/*Links inside the dropdown*/
+.dropdown-content b {
+  float: none;
+  color: grey;
+  padding: 14px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+/*Add a grey background color to dropdown link on hover*/
+.dropdown-content b:hover {
+  background-color: #ef96ae;
+}
+
+/*Show the dropdown menu on hover*/
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.navbar .search-container {
+  float: right;
+}
+
+.navbar input[type=text] {
+  padding: 6px;
+  margin-top: 8px;
+  font-size: 17px;
+  border-color: #af3f5d;
+  border: inset;
+}
+
+.navbar .search-container button {
+  float: right;
+  padding: 6px 10px;
+  margin-top: 8px;
+  margin-right: 16px;
+  background: #ddd;
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
+}
+
+.navbar .search-container button:hover {
+  background: #ee8fb0;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav .search-container {
+    float: none;
+  }
+  .topnav a, .topnav input[type=text], .topnav .search-container button {
+    float: none;
+    display: block;
+    text-align: left;
+    width: 100%;
+    margin: 0;
+    padding: 14px;
+  }
+  .topnav input[type=text] {
+    border: 1px solid #ccc;  
+  }
+}
+
+/* PRAC 2 */
+
+/*  */
+
+
+/*xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx*/
+/* The gallery of Cars and Info */
+/*xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx*/
+
+* {
+  box-sizing: border-box;
+} 
+
+body {
+  background-color: #f1f1f1;
+  padding: 20px;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+/* Center website */
+.main {
+  max-width: 1000px;
+  margin: auto;
+}
+
+h1 {
+  font-size: 50px;
+  word-break: break-all;
+}
+
+.row {
+  margin: 10px -16px;
+}
+
+/* Add padding BETWEEN each column */
+.row,
+.row > .col {
+  padding: 8px;
+}
+
+/* Create four equal columns that floats next to each other */
+.col {
+  float: left;
+  width: 33%;
+  display: none;
+}
+
+/* Clear floats after rows */ 
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Content */
+.content {
+  background-color:rgba(211, 193, 193, 0.69);
+  padding: 10px;
+  text-align: center;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 1800px) {
+  .carlist {
+    width: 20%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 900px) {
+  .carlist {
+    width: 90%;
+  }
+}
+
+/* The "show" class is added to the filtered elements */
+.show {
+  display: block;
+}
+
+/* Style the buttons */
+.btn {
+  border: none;
+  outline: none;
+  padding: 12px 16px;
+  background-color: white;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #ddd;
+}
+
+.btn.active {
+  background-color: #666;
+  color: white;
+}
+
+/*xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx*/
+/* Car Image Overlay on Hover */
+/*xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx*/
+.carlist {
+  position: relative;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #dcdbee;
+}
+
+.container:hover .overlay {
+  opacity: 0.7;
+}
+
+.text {
+  color: black;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+/*xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx*/
+/*xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx*/
+/*BRANDS PAGE*/
+/*xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx*/
+/*xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx*/
+
+/*Place Logo at top of the page*/
+body {
+  position: relative;
+  margin: 0;
+}
+
+.logo {
+  width: 95px;
+  height: 95px;
+  position: relative;
+  top: 0;
+  left: 0;
+}
+
+/*The Gallery of images*/
+.topnav-right {
+  float: right;
+  top: 0;
+}
+
+div.gallery {
+  margin: 40px;
+  border: 2px solid #cdacacec;
+  float: left;
+  width: 180px;
+  color: #9d3d56;
+  font-size: large;
+  font-style:inherit;
+}
+
+div.gallery:hover {
+  border: 3px solid #bd7878df;
+  box-shadow: inset;
+}
+
+div.gallery img {
+  width: 100%;
+  height: 125px;
+}
+
+div.desc {
+  padding: 30px;
+  text-align: center;
+}
+
+
+/*xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx*/
+/* The Two Search Bar */
+/*xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx*/
+
+form.example input[type=text] {
+  padding: 10px;
+  font-size: 17px;
+  border: 1px solid grey;
+  float: left;
+  width: 80%;
+  background: #f1f1f1;
+}
+
+form.example button {
+  float: left;
+  width: 20%;
+  padding: 10px;
+  background: #2196F3;
+  color: white;
+  font-size: 17px;
+  border: 1px solid grey;
+  border-left: none;
+  cursor: pointer;
+}
+
+form.example button:hover {
+  background: #0b7dda;
+}
+
+form.example::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/*xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx*/
+/*xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx*/
+/*FIND CAR PAGE*/
+/*xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx*/
+/*xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx*/
+
+.alert {
+  padding: 20px;
+  background-color: #975e7f;
+  color: white;
+  opacity: 1;
+  transition: opacity 0.6s;
+  margin-bottom: 15px;
+}
+
+/* .alert.success {background-color: #04AA6D;} */
+.alert.info {background-color: #986b85;}
+/* .alert.warning {background-color: #ff9800;} */
+
+.closebtn {
+  margin-left: 15px;
+  color: white;
+  font-weight: bold;
+  float: right;
+  font-size: 22px;
+  line-height: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.closebtn:hover {
+  color: black;
+}
